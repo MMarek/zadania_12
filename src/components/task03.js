@@ -14,7 +14,7 @@ class Hello extends Component{
     render() {
         return (
             <>
-                <h1>{this.state.name}</h1>
+                <h1>Hello {this.state.name}</h1>
                 <input name='name' value={this.state.name} onChange={this.handleChangeName}/>
             </>
         );

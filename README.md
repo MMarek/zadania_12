@@ -7,3 +7,6 @@ Gdy pierwsze dwa czynniki się zgadzają, to wyświetlany jest sekret, w przeciw
 `Komponent` zadający pytanie do pliku udającego zewnętrzne API. (zaimportowane)
 Wywołana funkcja oraz przekazana jako parametr do metody.
 (po chwili, pojawiają się dane pobrane z Fake API)
+
+### zad.3
+okno wpisujące na żywo jego zawartość
