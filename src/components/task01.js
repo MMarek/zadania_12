@@ -12,7 +12,7 @@ class SecretStuff extends Component{
 }
 
 function Task01() {
-    return <SecretStuff password={'123'} correctPassword={'qwerty'} secret={'Zgadłeś hasło'}/>
+    return <SecretStuff password={'123'} correctPassword={'123'} secret={'Zgadłeś hasło'}/>
 }
 
 export default Task01;

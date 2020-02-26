@@ -1,23 +1,44 @@
 import React, {Component} from "react";
 import FakeApi from "./data/fakeAPI";
 
-class AccountData extends Component{
+class AccountData extends Component {
     state = {
-        data:false
+        data: false
     };
 
     componentDidMount() {
-        FakeApi.then(data => {
-            this.setState({data})
+        FakeApi.then(response => {
+            this.setState({
+                data: response
+            })
         });
     }
+
     render() {
-        if (this.state.data === false) {
-            return null
+        const {data} = this.state;
+        if (!data) {
+            return null;
         }
 
         return (
-            <h1>Mam dane</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Change</th>
+                    <th>Balance</th>
+                </tr>
+                </thead>
+                <tbody>
+                {data.map(el =>
+                    <tr key={el.day}>
+                        <td>{el.day}</td>
+                        <td>{el.change}</td>
+                        <td>{el.balance}</td>
+                    </tr>
+                )}
+                </tbody>
+            </table>
         )
     }
 }
