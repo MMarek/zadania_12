@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import FakeAPI from "./data/fakeAPIpeople";
 
 class Login extends Component {
     state = {
@@ -20,7 +21,7 @@ class Login extends Component {
         })
     };
 
-    handleSubmitForm = (e) => {
+    handleSubmitForm = e => {
         e.preventDefault();
         const {login, password} = this.state;
         let errors = [];
@@ -32,7 +33,7 @@ class Login extends Component {
             errors.push('Password too short');
         }
 
-        this.setState({errors})
+        this.setState({errors});
 
         if (errors.length === 0) {
             this.login();
@@ -75,7 +76,7 @@ class Login extends Component {
             boxSizing: 'border-box'
         };
 
-        let errorJsx = null;
+        let errorsJsx = null;
         if (this.state.errors.length) {
             errorsJsx = <ul>{this.state.errors.map((el, i) =>
                 <li key={i}>{el}</li>
@@ -85,7 +86,7 @@ class Login extends Component {
 
         return (
             <form style={style} method="POST" onSubmit={this.handleSubmitForm}>
-                {errorJsx}
+                {errorsJsx}
                 <label>Login</label>
                 <input type='text'
                        name='login'
