@@ -54,7 +54,43 @@ class Login extends Component {
     render() {
         const {user} = this.state;
         if (user) {
-            return ()
+            return (
+                <>
+                    <h1>Witaj {user.name} {user.surname}</h1>
+                    <p>Ostatnie logowanie: {user.lastLogin.toLocalDateString()}</p>
+                </>
+            )
         }
+
+        let style = {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: '20px auto',
+            background: 'lightblue',
+            width: '400px',
+            border: '1px solid #ddd',
+            padding: '20px',
+            boxSizing: 'border-box'
+        };
+
+        return (
+            <form style={style} method="POST" onSubmit={this.handleSubmitForm}>
+                <label>Login</label>
+                <input/>
+                <label>Password</label>
+
+                <input/>
+
+                <input/>
+            </form>
+        )
     }
 }
+
+function Task04() {
+    return <Login/>
+}
+
+export default Task04;

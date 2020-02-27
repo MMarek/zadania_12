@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Task01 from "./task01";
 import Task02 from "./task02";
 import Task03 from "./task03";
+import Task04 from "./task04";
 
 class Home extends Component{
 
@@ -11,6 +12,7 @@ class Home extends Component{
              <Task01/>
              <Task02/>
              <Task03/>
+             <Task04/>
             </>
         );
     }
