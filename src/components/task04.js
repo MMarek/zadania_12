@@ -9,7 +9,7 @@ class Login extends Component {
         user: null
     };
 
-    handlChangeLogin = (e) => {
+    handleChangeLogin = (e) => {
         this.setState({
             login: e.target.value
         })
@@ -58,7 +58,7 @@ class Login extends Component {
             return (
                 <>
                     <h1>Witaj {user.name} {user.surname}</h1>
-                    <p>Ostatnie logowanie: {user.lastLogin.toLocalDateString()}</p>
+                    <p>Ostatnie logowanie: {user.lastLogin.toLocaleDateString()}</p>
                 </>
             )
         }
@@ -91,13 +91,15 @@ class Login extends Component {
                 <input type='text'
                        name='login'
                        value={this.state.login}
-                       onChange={this.handlChangeLogin}/>
+                       onChange={this.handleChangeLogin}
+                />
                 <label>Password</label>
 
                 <input type='password'
                        name='password'
                        value={this.state.login}
-                       onChange={this.handleChangePassword}/>
+                       onChange={this.handleChangePassword}
+                />
 
                 <input type='submit' value='Zaloguj'/>
             </form>
