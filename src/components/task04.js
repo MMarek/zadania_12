@@ -75,15 +75,30 @@ class Login extends Component {
             boxSizing: 'border-box'
         };
 
+        let errorJsx = null;
+        if (this.state.errors.length) {
+            errorsJsx = <ul>{this.state.errors.map((el, i) =>
+                <li key={i}>{el}</li>
+            )}
+            </ul>
+        }
+
         return (
             <form style={style} method="POST" onSubmit={this.handleSubmitForm}>
+                {errorJsx}
                 <label>Login</label>
-                <input/>
+                <input type='text'
+                       name='login'
+                       value={this.state.login}
+                       onChange={this.handlChangeLogin}/>
                 <label>Password</label>
 
-                <input/>
+                <input type='password'
+                       name='password'
+                       value={this.state.login}
+                       onChange={this.handleChangePassword}/>
 
-                <input/>
+                <input type='submit' value='Zaloguj'/>
             </form>
         )
     }
