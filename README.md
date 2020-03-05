@@ -9,4 +9,8 @@ Wywołana funkcja oraz przekazana jako parametr do metody.
 (po chwili, pojawiają się dane pobrane z Fake API)
 
 ### zad.3
-okno wpisujące na żywo jego zawartość
+Okno wpisujące na żywo jego zawartość
+
+### zad.4
+Okno logowania i hasło z podpiętym wewnętrznym API (Login: 'Kroniki', Hasło: 'qwerty' - w przypadku błędnych danych,
+pojawia się taka informacja)

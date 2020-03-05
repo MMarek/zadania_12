@@ -7,7 +7,6 @@ export default {
                     username,
                     name: "Jan",
                     surname: "Kowalski",
-                    lastLogin: new Date("14/02/1987")
                 });
             } else {
                 reject("Hasło lub login są nieprawidłowe!");
