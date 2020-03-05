@@ -26,6 +26,7 @@ class TextField extends Component {
                     <option>osiem</option>
                     <option>dziewięć</option>
                 </select>
+                <span>ilość znaków:</span>
             </div>
         )
     }
