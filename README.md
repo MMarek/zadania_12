@@ -14,3 +14,6 @@ Okno wpisujące na żywo jego zawartość
 ### zad.4
 Okno logowania i hasło z podpiętym wewnętrznym API (Login: 'Kroniki', Hasło: 'qwerty' - w przypadku błędnych danych,
 pojawia się taka informacja)
+
+### zad.5
+Elementy z którego wybieramy żądaną opcje.
