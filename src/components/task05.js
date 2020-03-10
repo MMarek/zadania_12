@@ -1,39 +1,39 @@
 import React, {Component} from "react";
 
-class TextField extends Component {
-    // state = {
-    //     option: ''
-    // };
+let data = ['BMW', 'JAGUAR', 'PORSHE'];
 
-    // optionValue = (e) => {
-    //     this.setState({
-    //         option: e.target.value
-    //     })
-    // };
+class SelectOrType extends Component {
+    state = {
+        option: [...this.props.items, 'inne'],
+        car: this.props.items[0],
+        other: ''
+    };
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    };
+
+    handleAddClick = (e) => {
+        let newOptions = [...this.state.options];
+        newOptions[newOptions.length - 1] = this.state.other;
+        this.setState({
+            options:newOptions,
+            car: this.state.other
+        })
+    };
 
     render() {
         return (
-            <div>
-                {/*<p>{this.state.value}</p>*/}
-                <select>
-                    {/*<option {this.optionValue}>12345</option>*/}
-                    <option>jeden</option>
-                    <option>dwa</option>
-                    <option>cztery</option>
-                    <option>pięć</option>
-                    <option>sześć</option>
-                    <option>siedem</option>
-                    <option>osiem</option>
-                    <option>dziewięć</option>
-                </select>
-                <span>ilość znaków:</span>
-            </div>
+            <>
+                </>
         )
     }
 }
 
 function Task05() {
-    return <TextField/>
+    return SelectOrType
 }
 
 export default Task05;

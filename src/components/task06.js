@@ -1,58 +1,96 @@
+
 import React, {Component} from "react";
+import ReactDOM from "react-dom";
 
-function SearchBox() {
-    return (
-        <section>
-            <input type='search'/>
-            <button>Wyszukaj</button>
-        </section>
-    );
+
+class BookInfo extends Component {
+    state = {
+        bookData: null,
+        isbn: this.props.isbn
+    }
+
+    changeIsbn = (isbn) => {
+        // this.setState({
+        //     isbn
+        // });
+        this.loadBookInfo(isbn);
+    }
+
+    componentDidMount() {
+        this.loadBookInfo(this.state.isbn);
+    }
+
+    loadBookInfo(isbn) {
+        fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`)
+            .then(resp => {
+                if (resp.ok) {
+                    return resp.json()
+                } else {
+                    throw new Error("Error during fetching data");
+                }
+            })
+            .then(data => {
+                if (data.items && data.items[0] && data.items[0].volumeInfo) {
+                    this.setState({
+                        bookData: data.items[0].volumeInfo
+                    })
+                }else{
+                    this.setState({
+                        bookData: null
+                    })
+                }
+            })
+            .catch(err => console.log(err))
+
+
+    }
+
+    render() {
+
+        return (
+            <>
+                <SearchBookForm onSearch={this.changeIsbn}/>
+                {this.state.bookData && <h1>{this.state.bookData.title}</h1>}
+            </>
+        )
+    }
 }
 
-// class SearchForm extends Component {
-//     render() {
-//         return (
-        {/*<section>*/}
-        {/*    <input type={search}/>*/}
-        {/*    <button>Wyszukaj</button>*/}
-        // </section>
-        // )
-    // }
-// }
+class SearchBookForm extends Component {
+    state = {
+        isbn: ""
+    }
+    handleChangeIsbn = (e) => {
+        this.setState({
+            isbn: e.target.value
+        })
+    }
 
+    handleSubmitForm = (e) => {
+        e.preventDefault();
+        if(typeof this.props.onSearch === 'function'){
+            this.props.onSearch(this.state.isbn);
+        }
+    }
 
-// class AddTwoNumbers extends Component {
-//     state = {
-//         inputA: '',
-//         inputB: ''
-//     };
-//
-//     addValue1 = () => {
-//         this.setState({
-//             inputA: this.state.inputA
-//         })
-//     };
-//
-//     addValue2 = () => {
-//         this.setState({
-//             inputB: this.state.inputB
-//         })
-//     };
-//
-//     render() {
-//         return(
-//             <form>
-//                 <input>liczba 1</input>
-//                 <input>liczba 2</input>
-//                 <h1>{this.state.value}</h1>
-//             </form>
-//         )
-//     }
-// }
-
-
-function Task06() {
-    return <SearchBox/>
+    render() {
+        return (
+            <form onSubmit={this.handleSubmitForm}>
+                <input name="isbn"
+                       type="text"
+                       placeholder="ISBN"
+                       value={this.state.isbn}
+                       onChange={this.handleChangeIsbn}
+                />
+                <button>Search</button>
+            </form>
+        )
+    }
 }
 
-export default Task06;
+
+function Task05() {
+    return <BookInfo isbn="0747532699"/>
+}
+
+export default Task05;

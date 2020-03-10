@@ -16,4 +16,3 @@ Okno logowania i hasło z podpiętym wewnętrznym API (Login: 'Kroniki', Hasło:
 pojawia się taka informacja)
 
 ### zad.5
-Elementy z którego wybieramy żądaną opcje.
