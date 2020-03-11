@@ -16,3 +16,8 @@ Okno logowania i hasło z podpiętym wewnętrznym API (Login: 'Kroniki', Hasło:
 pojawia się taka informacja)
 
 ### zad.5
+List To Do - możliwość dodania wpisanej treści do listy. Tworzenie listy rzeczy do wykonania.
+
+### zad.6
+Okno logowania - wpisanie poprawnego hasła powoduje jego potwierdzenie.
+`hasło to: "qwerty"`
