@@ -29,6 +29,6 @@ Komponenty renderujące kolejno względem swoich dzieci.
 Link który po kliknięciu znika, a w jego miejsce pojawia się treść dziecka tego komponentu.
 
 ### zad.9
-Okno formularza, po wpisaniu danych wysyłamy. W konsoli znajdujemy wysłane dane.
+Okno formularza, po wpisaniu danych wysyłamy. W konsoli znajdujemy wysłane dane. Nazwę oraz hasło.
 
 ### zad.10

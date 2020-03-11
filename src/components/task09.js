@@ -2,29 +2,38 @@ import React, {Component} from "react";
 
 class FormExample extends Component {
     state = {
-        name: ""
+        name: "",
+        password: ""
     };
 
-    handleNameChange = e => {
+    handleChange = e => {
         this.setState({
-            name: e.target.value
+            [e.target.name]: e.target.value
         });
     };
 
     handleSubmit = e => {
         e.preventDefault();
-        console.log(this.state.name);
+        console.log(`Nazwa: ${this.state.name}`);
+        console.log(`Hasło: ${this.state.password}`);
     };
 
     render() {
+        const {name, password} = this.state;
+
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Imię i nazwisko:
-                    <input type="text"
-                           name="name"
-                           value={this.state.name}
-                           onChange={this.handleNameChange}/>
-                </label>
+                <input type="text"
+                       name="name"
+                       value={name}
+                       onChange={this.handleChange}/>
+
+
+                <input type="password"
+                       name="password"
+                       value={password}
+                       onChange={this.handleChange}/>
+
                 <input type="submit" value="Wyślij"/>
             </form>
         );
