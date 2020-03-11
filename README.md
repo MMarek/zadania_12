@@ -45,3 +45,16 @@ Zapytanie do użytkownika o imię i wiek. Wyświetlenie danych na stronie.
 
 ### zad.14
 Komponent funkcyjny ze strukturą danych.
+
+### zad.15
+Ostylowany Div
+
+### zad.16
+Komponenty funkcyjne, zwracające liczby z podanego przedziału, w ilości 
+narzuconej w jednym z trzech parametrów, oraz losowo.
+
+### zad.17
+Komponent funkcyjny ze strukturą danych.
+
+### zad.18
+Komponent wyświetlający kolejno produkty, podpięte z innego pliku. Z guzikami, oraz będące oscylowane
