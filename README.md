@@ -21,3 +21,6 @@ List To Do - możliwość dodania wpisanej treści do listy. Tworzenie listy rze
 ### zad.6
 Okno logowania - wpisanie poprawnego hasła powoduje jego potwierdzenie.
 `hasło to: "qwerty"`
+
+### zad.7
+Komponenty renderujące kolejno względem swoich dzieci.
