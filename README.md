@@ -32,3 +32,7 @@ Link który po kliknięciu znika, a w jego miejsce pojawia się treść dziecka 
 Okno formularza, po wpisaniu danych wysyłamy. W konsoli znajdujemy wysłane dane. Nazwę oraz hasło.
 
 ### zad.10
+Komponenty klasowe przekazujące zdarzenia - włączenie orazy wyłączenie żarówki kliknięciem w guzik.
+
+### zad.11
+Rzeczy z listy do zrobienia, które znikają po odhaczeniu.
