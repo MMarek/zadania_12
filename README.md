@@ -36,3 +36,7 @@ Komponenty klasowe przekazujące zdarzenia - włączenie orazy wyłączenie żar
 
 ### zad.11
 Rzeczy z listy do zrobienia, które znikają po odhaczeniu.
+
+### zad.12
+Licznik sekund
+
