@@ -42,3 +42,5 @@ Licznik sekund
 
 ### zad.13
 Zapytanie do użytkownika o imię i wiek. Wyświetlenie danych na stronie.
+
+### zad.14
