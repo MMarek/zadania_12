@@ -44,3 +44,4 @@ Licznik sekund
 Zapytanie do użytkownika o imię i wiek. Wyświetlenie danych na stronie.
 
 ### zad.14
+Komponent funkcyjny ze strukturą danych.
