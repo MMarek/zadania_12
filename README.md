@@ -40,3 +40,5 @@ Rzeczy z listy do zrobienia, które znikają po odhaczeniu.
 ### zad.12
 Licznik sekund
 
+### zad.13
+Zapytanie do użytkownika o imię i wiek. Wyświetlenie danych na stronie.
