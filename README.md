@@ -24,3 +24,6 @@ Okno logowania - wpisanie poprawnego hasła powoduje jego potwierdzenie.
 
 ### zad.7
 Komponenty renderujące kolejno względem swoich dzieci.
+
+### zad.8
+Link który po kliknięciu znika, a w jego miejsce pojawia się treść dziecka tego komponentu.
