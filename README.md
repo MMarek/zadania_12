@@ -79,5 +79,8 @@ drugi przyjmuje w propsie wartość  renderuje ja. Całość jest z dodanym inte
 co chwile znaku.
 
 ### zad.24
+Komponent funkcyjny przyjmujący w `props` dane, przekazujący tablicę, do kolejnego komponentu. 
+(tablica posiada niepuste stringi) Jeżeli ilość znaków 
+nie jest zgodna z ilością znaków, warunek nie jest spełniony.
 
 ### zad.25
