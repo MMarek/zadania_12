@@ -31,11 +31,11 @@ function UserCard(props) {
 
 function Task24() {
     return (
-        <UserCard name={"Jan"}
-                  surname={"Kowalski"}
-                  address={"Zielińskiego 20"}
-                  postcode={"23-421"}
-                  city={"Białogród"}/>
+        <UserCard name={"Albin"}
+                  surname={"Kolano"}
+                  address={"Błotna 20"}
+                  postcode={"12-345"}
+                  city={"Katowice"}/>
     )
 }
 
