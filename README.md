@@ -74,6 +74,9 @@ Komponent przechowujący w stanie lokalnym nr światła od 1 do 4. Komponent wy�
 ustalonym sposobie.
 
 ### zad.23
+Dwa komponenty. Jeden przyjmuje wartość i przechowuje ją wewnątrz w elemencie, 
+drugi przyjmuje w propsie wartość  renderuje ja. Całość jest z dodanym interwałem co powoduje pojawienie się,
+co chwile znaku.
 
 ### zad.24
 
