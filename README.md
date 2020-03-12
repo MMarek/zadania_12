@@ -1,3 +1,4 @@
+Live Preview: https://mmarek.github.io/zadania_12/.
 
 ### -zad.1 
 `Komponent` przyjmujący z props hasło, poprawne hasło, oraz sekret. 
