@@ -57,4 +57,7 @@ narzuconej w jednym z trzech parametrów, oraz losowo.
 Komponent funkcyjny ze strukturą danych.
 
 ### zad.18
-Komponent wyświetlający kolejno produkty, podpięte z innego pliku. Z guzikami, oraz będące oscylowane
+Komponent wyświetlający kolejno produkty, podpięte z innego pliku. Z guzikami, oraz będące ostylowane.
+
+### zad.19
+Element `div` z tłem o kolorze zielonym, który zmienia barwę na czerwoną po 5sekundach.
