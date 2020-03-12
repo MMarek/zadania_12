@@ -84,3 +84,4 @@ Komponent funkcyjny przyjmujący w `props` dane, przekazujący tablicę, do kole
 nie jest zgodna z ilością znaków, warunek nie jest spełniony.
 
 ### zad.25
+Komponent renderujący postęp. co 100ms o 1%. Po uzyskaniu 100% pojawia się napis 'Dane załadowane!' 
