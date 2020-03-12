@@ -18,6 +18,7 @@ import Task16 from "./task16";
 import Task17 from "./task17";
 import Task18 from "./task18";
 import Task19 from "./task19";
+import Task20 from "./task20";
 
 class Home extends Component{
 
@@ -43,6 +44,7 @@ class Home extends Component{
              <Task17/>
              <Task18/>
              <Task19/>
+             <Task20/>
             </>
         );
     }

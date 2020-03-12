@@ -61,3 +61,6 @@ Komponent wyświetlający kolejno produkty, podpięte z innego pliku. Z guzikami
 
 ### zad.19
 Element `div` z tłem o kolorze zielonym, który zmienia barwę na czerwoną po 5sekundach.
+
+### zad.20
+Komponent funkcyjny przepisany jako clasowy, zamieniający znaki duże na małe.
