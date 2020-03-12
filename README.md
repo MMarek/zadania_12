@@ -70,6 +70,8 @@ Komponent przechowujący do wyświetlenia jako stan lokalny kolor żółty, wraz
 niebieski, wykonany w odpowiedniej metodzie cyklu życia, oraz zwalniając tym samym sposobem zasoby po 8 sekundach.
 
 ### zad.22
+Komponent przechowujący w stanie lokalnym nr światła od 1 do 4. Komponent wyświetla kolejno różne wartości o 
+ustalonym sposobie.
 
 ### zad.23
 
