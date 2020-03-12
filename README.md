@@ -64,3 +64,15 @@ Element `div` z tłem o kolorze zielonym, który zmienia barwę na czerwoną po 
 
 ### zad.20
 Komponent funkcyjny przepisany jako clasowy, zamieniający znaki duże na małe.
+
+### zad.21
+Komponent przechowujący do wyświetlenia jako stan lokalny kolor żółty, wraz z timerem który zmienia ten kolor na 
+niebieski, wykonany w odpowiedniej metodzie cyklu życia, oraz zwalniając tym samym sposobem zasoby po 8 sekundach.
+
+### zad.22
+
+### zad.23
+
+### zad.24
+
+### zad.25
